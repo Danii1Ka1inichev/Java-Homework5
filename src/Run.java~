@@ -1,0 +1,17 @@
+import Items.Axe;
+import Items.Inventory;
+import Units.Human;
+
+import java.util.Arrays;
+
+public class Run {
+    public static void main(String[] args){
+        Human karl = new Human(new Inventory(5), 100, 100, 5, 0, 10);
+        Axe s = new Axe();
+        karl.inventory.inventory[0] = s;
+        System.out.println(Arrays.toString(karl.inventory.inventory));
+    }
+
+
+
+}
